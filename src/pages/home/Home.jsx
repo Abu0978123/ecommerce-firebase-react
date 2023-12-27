@@ -3,6 +3,7 @@ import Layout from '../../components/Layout/Layout'
 import MyContext from '../../context/data/myContext'
 import HeroSection from '../../components/heroSection/HeroSection'
 import Filter from '../../components/filter/Filter'
+import ProductCard from '../../components/productCard/ProductCard'
 
 const Home = () => {
   const context = useContext(MyContext)
@@ -10,6 +11,7 @@ const Home = () => {
     <Layout>
     <HeroSection/>
     <Filter/>
+    <ProductCard/>
     </Layout>
   )
 }
