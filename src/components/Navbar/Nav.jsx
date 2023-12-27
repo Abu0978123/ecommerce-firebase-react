@@ -13,7 +13,7 @@ export default function Nav() {
   const { toggleMode, mode } = context
 
   return (
-    <div className="bg-white sticky top-0 z-50  "  >
+    <nav className="bg-white sticky top-0 z-50  "  >
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -193,6 +193,6 @@ export default function Nav() {
           </div>
         </nav>
       </header>
-    </div>
+    </nav>
   )
 }
